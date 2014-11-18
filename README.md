@@ -1,4 +1,4 @@
-eph-chesc
+EPH-chesc
 =========
 
 The Evolutionary-Programming Hyper-heuristic (EPH) is a hyper-heuristic that has been submitted to the [CHeSC challenge](http://www.asap.cs.nott.ac.uk/external/chesc2011/index.html) held in 2011. EPH obtained the [5th place](http://www.asap.cs.nott.ac.uk/external/chesc2011/results.html).
