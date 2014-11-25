@@ -25,7 +25,7 @@ You can run EPH on the CHeSC benchmark from the command line with the `EphComman
 * `-o` The output file in which results are recorded.
 * `-dp` To disable the progress output in the console.
 * `-s` The seed value used for random number generator.
-* `-p` The list of problem instances to be solved by EPH. The syntax is `PROBLEM.INSTANCE [PROBLEM.INSTANCE ...]`. Valid problem names are: `SAT`, `BinPacking`, `PersonnelScheduling`, `FlowShop`, `TSP`, `VRP`. Instances are numbers between 0 and 11 for the first four problem domains, and between 0 and 9 for TSP and VRP. Example `-p SAT.0 SAT.2` runs EPH on instance 0 and 2 of the SAT problem.
+* `-p` The list of problem instances to be solved by EPH. The syntax is `PROBLEM.INSTANCE [PROBLEM.INSTANCE ...]`. Valid problem names are: `SAT`, `BinPacking`, `PersonnelScheduling`, `FlowShop`, `TSP`, `VRP`. Instances are numbers between 0 and 11 for the first four problem domains, and between 0 and 4 for TSP and VRP. Example `-p SAT.0 SAT.2` runs EPH on instance 0 and 2 of the SAT problem.
 
 Examples for running EPH on Bin-packing instances 0 and 1 and SAT instances 0 and 1, with a time limit of 600 seconds, 10 runs, and the results recorded in results.txt:
 
@@ -35,7 +35,7 @@ With reference to libraries (on Windows):
 
     java -cp "./bin;./lib/hyflex_2011/hyflex_2013_03_15.jar;./lib/jcommander/jcommander_2014_11_14.jar" fr.lalea.eph.EphCommand -t 600 -r 10 -o results.txt -p BinPacking.0 BinPacking.1 SAT.0 SAT.1
     
-With reference to libraries (on Unix):
+With reference to libraries (Unix syntax):
 
     java -cp "./bin:./lib/hyflex_2011/hyflex_2013_03_15.jar:./lib/jcommander/jcommander_2014_11_14.jar" fr.lalea.eph.EphCommand -t 600 -r 10 -o results.txt -p BinPacking.0 BinPacking.1 SAT.0 SAT.1
 
